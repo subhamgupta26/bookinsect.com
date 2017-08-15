@@ -1,0 +1,50 @@
+use bookInsect;
+
+create table userDetails
+(userID  varchar(30) primary key,
+password varchar(30) ,
+firstName  varchar(30) ,
+lastName  varchar(30) ,
+emailID varchar(20) ,
+gender varchar(20) ,
+address varchar(200) ,
+address2 varchar(200) ,
+city varchar(200) ,
+state varchar(30) ,
+age varchar(30) ,
+pincode varchar(30) ,
+phone varchar(30)
+
+);
+
+create table BookDetail(
+bookId int primary key auto_increment,
+bookname char(50),
+publishername char(50),
+authorname char(50),
+price int,
+edition char(10),
+quantity int,
+category char(20)
+);
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('aabrakadabra','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('Revolution2020','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('ITooHadaLoveStory','Penguin Book India','Ravinder Singh',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('CanLoveHappenTwice','Penguin Books India','Ravinder Singh',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('Mathematics','S Chand Publications','RS Agarwal',350,'5th',5,'Education');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('QuantitativeAptitude','S Chand Publications','RS Agarwal',350,'3rd',5,'Competitive');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('PlayItMyWay','Rupa & Co','Sachin Tendulkar',440,'1st',5,'Autobiography');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('TrueColors','Rupa & Co','Adam Gilchrist',750,'1st',5,'Autobiography');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('HandbookonMultimedia','PHI Learning','J. Jeffcoate',250,'4th',5,'Engineering');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('WebTechnology: A Developers Perspective','PHI Learning','N.P. Gopalan and J. Akilandeswari',400,'2nd',5,'Engineering');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('ThreeMistakesofMyLife','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('MultimediaSystems','Pearson Ed.','Koegel Buford',350,'4th',15,'Engineering');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('NeuralNetworks:AComprehensive Foundation','Prentice Hall','Simon Haykin',1000,'2nd',5,'Enginnering');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('WillYouBeMine?','Penguin Books India','Ravinder Singh',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('Mathematics','Manoj Publications','RD Sharma',300,'7th',5,'Education');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('Chemistry','Modern ABC','R Agarwal',750,'5th',5,'Competitive');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('TheMughals','Rupa & Co','H. Lawmann',1000,'2nd',5,'History');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('TwoStates','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('ANightataCallCenter','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('CloudComputingBible','Wiley India Pvt. Ltd','Barrie Sosinsky',351,'2nd',5,'Engineering');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category) values('DigitalImageProcessing','Pearson','Gonzalves','500','3rd',5,'Engineering');

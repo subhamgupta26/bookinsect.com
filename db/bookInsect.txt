@@ -1,0 +1,64 @@
+use bookInsect;
+
+create table userDetails
+(userID  varchar(30) primary key,
+password varchar(30) not null,
+firstName  varchar(30) not null,
+lastName  varchar(30) not null,
+emailID varchar(30) not null,
+gender varchar(20) not null,
+address varchar(200) not null,
+address2 varchar(200) not null,
+city varchar(200) not null,
+state varchar(30) not null,
+age varchar(30) not null,
+pincode int(6) not null,
+phone varchar(10) not null
+
+);
+
+create table BookDetail(
+bookId int primary key auto_increment,
+bookname char(50),
+publishername char(50),
+authorname char(50),
+price int,
+edition char(10),
+quantity int,
+category char(20),
+src varchar(100)
+);
+
+create table orderDetail(
+bookID varchar(200) not null,
+bookName varchar(200) not null,
+userName varchar(200) not null,
+orderID int primary key auto_increment
+);
+
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('BiologyBook','S.Chand','S.Gupta',500,'1st',5,'Education','images/biology.jpeg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('Revolution2020','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction','images/r2020.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('ITooHadaLoveStory','Penguin Book India','Ravinder Singh',100,'1st',5,'Fiction','images/ithals.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('CanLoveHappenTwice','Penguin Books India','Ravinder Singh',100,'1st',5,'Fiction','images/clht.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('Mathematics','S Chand Publications','RS Agarwal',350,'5th',5,'Education','images/maths1.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('QuantitativeAptitude','S Chand Publications','RS Agarwal',350,'3rd',5,'Competitive','images/quants.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('PlayItMyWay','Rupa & Co','Sachin Tendulkar',440,'1st',5,'Autobiography','images/pimw.jpeg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('TrueColors','Rupa & Co','Adam Gilchrist',750,'1st',5,'Autobiography','images/true.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('HandbookonMultimedia','PHI Learning','J. Jeffcoate',250,'4th',5,'Engineering','images/mm.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('WebTechnology: A Developers Perspective','PHI Learning','N.P. Gopalan and J. Akilandeswari',400,'2nd',5,'Engineering','images/web.jpeg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('ThreeMistakesofMyLife','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction','images/tmol.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('MultimediaSystems','Pearson Ed.','Koegel Buford',350,'4th',15,'Engineering','images/ms.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('NeuralNetworks:AComprehensive Foundation','Prentice Hall','Simon Haykin',1000,'2nd',5,'Enginnering','images/nn.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('Mathematics','Manoj Publications','RD Sharma',300,'7th',5,'Education','images/maths2.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('Chemistry','Modern ABC','R Agarwal',750,'5th',5,'Competitive','images/modern.jpeg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('TheLastMughal','Rupa & Co','WilliamDarylmple',1000,'2nd',5,'History','images/tlm.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('OneNightataCallCenter','Rupa & Co','Chetan Bhagat',100,'1st',5,'Fiction','images/callcenter.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('CloudComputingBible','Wiley India Pvt. Ltd','Barrie Sosinsky',351,'2nd',5,'Engineering','images/cc.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('DigitalImageProcessing','Pearson','Gonzalves','500','3rd',5,'Engineering','images/ip.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('Everest','Jon Krakauer','Everest Publishing House',500,'1st',5,'Fiction','images/everest.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('TheStoneGods','H.Hamilton','Jeanette Winterson',560,'1st',5,'Fiction','images/thestonegods.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('AnneFrank','Contact Publishing','M.Muller',300,'1st',5,'Autobiography','images/annehank.jpg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('Doubtless','Riptide','Jennifer Leclaire',500,'1st',5,'Fiction','images/doubtless.JPG');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('64Days','One South East','Kevin Greer',750,'1st',5,'Horror','images/64days.gif');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('GameofThrones','S.Willey','George R R Martin',1500,'1st',5,'Fiction','images/Gameofthrones.jpeg');
+insert into BookDetail(bookname,publishername,authorname,price,edition,quantity,category,src) values('TheBookofMormon','R.Publications','J.Smith',3000,'1st',5,''Religion','images/tbom.jpg');

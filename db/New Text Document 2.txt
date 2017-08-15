@@ -1,0 +1,30 @@
+use test;
+
+create table UserDetail
+(
+	userId int primary key auto_increment,
+	firstname char(25),
+	lastname char(25),
+	emailid char(50),
+	gender char(6),
+	password char(25),
+	confirmpassword char(25),
+	addressline1 char(25),
+	addressline2 char(25),
+	city char(20),
+	state char(25),
+	dob char(25),
+	pincode char(6),
+	mobile char(10)
+);
+
+create table BookDetail(
+bookId int primary key auto_increment,
+bookname char(50),
+publishername char(50),
+authorname char(50),
+price int,
+edition char(10),
+quantity int,
+category char(50)
+);
